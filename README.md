@@ -4,17 +4,15 @@ This codebase aims to propose a solution for selection of highly responsive web 
 Below are steps involved to run the comparison and some basic introduction to code files:-
 
 ## Code Design
-`
-The code has 3 files namely testFlask.py, testFastApi.py and testFalcon.py that define basic syntax to make a resource and API endpoint to call either of the utilities defined in utilityFunctions.py; The utilities include 3 different test case scenarios as basic Hello_Word, CPU intensive Fibonacci series computation and IO intensive File Retrival from database.
+The code has 3 files namely `testFlask.py`, `testFastApi.py` and `testFalcon.py` that define basic syntax to make a resource and API endpoint to call either of the utilities defined in `utilityFunctions.py`; The utilities include 3 different test case scenarios as basic Hello_Word, CPU intensive Fibonacci series computation and IO intensive File Retrival from database.
 
-The file runApacheBenchmarkingOnRunningFramework.py will call Apache Benchmarking tool for noting required criterion parameter values for 10000 requests with a concurrency of 20. This experiment is repeated 5 times for taking an average result and iterated for all test case scenarios for all frameworks with help of file allTestScenarios.py
+The file `runApacheBenchmarkingOnRunningFramework.py` will call Apache Benchmarking tool for noting required criterion parameter values for 10000 requests with a concurrency of 20. This experiment is repeated 5 times for taking an average result and iterated for all test case scenarios for all frameworks with help of file `allTestScenarios.py`
 
-The results so collected are then parsed from simple file to 2D dataframe and from them an AHP model file(.ahp) is then created using file parseABtollOutcomes.py
+The results so collected are then parsed from simple file to 2D dataframe and from them an AHP model file(.ahp) is then created using file `parseABtollOutcomes.py`
 
-The process of running whole code includes calling file runTestScenariosAndCreateAHP.py which computes mentioned AHP model file by running test case scenarios.
+The process of running whole code includes calling file `runTestScenariosAndCreateAHP.py` which computes mentioned AHP model file by running test case scenarios.
 
-FIle with name AHP.r defines Running GUI which can compute AHP results when given an AHP model file as input.
-`
+FIle with name `AHP.r` defines Running GUI which can compute AHP results when given an AHP model file as input.
 
 ## Commands to run Code
 1. Install all required dependencies mentioned in requirements.txt file
