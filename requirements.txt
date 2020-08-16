@@ -1,0 +1,6 @@
+pandas 
+falcon
+fastapi
+flask
+pymongo
+gridfs
