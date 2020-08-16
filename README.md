@@ -14,6 +14,12 @@ The process of running whole code includes calling file `runTestScenariosAndCrea
 
 FIle with name `AHP.r` defines Running GUI which can compute AHP results when given an AHP model file as input.
 
+## Prerequisites
+1. Python3.5 or greater
+2. R version 3.4.4
+3. Apache benchmark tool callable as utility from terminal
+4. pip must be installed
+
 ## Commands to run Code
 1. Install all required dependencies mentioned in requirements.txt file
 `
